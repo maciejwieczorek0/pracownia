@@ -6,7 +6,3 @@ export default defineConfig({
   plugins: [react()],
   base: "/pracownia"
 })
-
-server: {  
-  host: true  
-}
