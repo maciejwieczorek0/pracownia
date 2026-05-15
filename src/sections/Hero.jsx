@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero-surface" style={{ backgroundImage: 'url(/hero/hero-main.png)' }}>
+      <div className="hero-surface" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero/hero-main.png)` }}>
         <div className="overlay">
           <p className="hero-kicker">Nowoczesne ogrodzenia i konstrukcje stalowe</p>
           <h1>Projekt, produkcja i montaz ogrodzen pod wymiar</h1>

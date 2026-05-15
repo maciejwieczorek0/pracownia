@@ -3,22 +3,22 @@ export default function Products() {
     {
       title: 'Ogrodzenia poziome',
       description: 'Proste linie i nowoczesny charakter do wspolczesnej zabudowy.',
-      img: '/gallery/work-01.png'
+      img: `${import.meta.env.BASE_URL}gallery/work-01.png`
     },
     {
       title: 'Ogrodzenia pionowe',
       description: 'Lekka forma i elegancja z wieksza przepuszczalnoscia swiatla.',
-      img: '/gallery/work-08.png'
+      img: `${import.meta.env.BASE_URL}gallery/work-08.png`
     },
     {
       title: 'Bramy i furtki',
       description: 'Spojne stylistycznie systemy z opcja automatyki i kontroli dostepu.',
-      img: '/gallery/work-04.png'
+      img: `${import.meta.env.BASE_URL}gallery/work-04.png`
     },
     {
       title: 'Konstrukcje stalowe',
       description: 'Balustrady, schody i elementy stalowe wykonywane pod konkretny projekt.',
-      img: '/gallery/work-05.png'
+      img: `${import.meta.env.BASE_URL}gallery/work-05.png`
     }
   ]
 

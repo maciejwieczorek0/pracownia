@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function Gallery() {
-  const images = Array.from({ length: 15 }, (_, index) => `/gallery/work-${String(index + 1).padStart(2, '0')}.png`)
+  const images = Array.from({ length: 15 }, (_, index) => `${import.meta.env.BASE_URL}gallery/work-${String(index + 1).padStart(2, '0')}.png`)
 
   const [selected, setSelected] = useState(null)
 
