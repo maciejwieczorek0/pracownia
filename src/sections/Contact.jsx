@@ -40,21 +40,17 @@ export default function Contact() {
     try {
       const response = await fetch(`https://formsubmit.co/${leadEmail}`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json'
-        },
-        body: JSON.stringify(payload)
+        body: formData
       })
-
+    
       if (!response.ok) {
-        throw new Error('Nie udalo sie wyslac formularza.')
+        throw new Error()
       }
-
+    
       form.reset()
       showToast('success', 'Prosba o wycene zostala wyslana pomyslnie.')
     } catch {
-      showToast('error', 'Wysylka nie powiodla sie. Sprobuj ponownie za chwile.')
+      showToast('error', 'Wysylka nie powiodla sie.')
     } finally {
       setIsSubmitting(false)
     }
