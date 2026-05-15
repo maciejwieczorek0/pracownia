@@ -38,7 +38,7 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch(`https://formsubmit.co/ajax/${leadEmail}`, {
+      const response = await fetch(`https://formsubmit.co/${leadEmail}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
