@@ -107,6 +107,19 @@ export default function Contact() {
           <span>Pomiar na miejscu</span>
         </div>
       </div>
+
+      <div className="privacy-policy-box" id="privacy-policy">
+        <h3>Polityka prywatnosci (RODO)</h3>
+        <p>
+          Administratorem danych jest Pracownia Widawa. Dane podane w formularzu przetwarzamy w celu kontaktu
+          i przygotowania wyceny na podstawie Twojej zgody. Dane nie sa udostepniane podmiotom trzecim
+          poza niezbednymi uslugami technicznymi obslugujacymi wysylke formularza.
+        </p>
+        <p>
+          Masz prawo dostepu do danych, ich poprawiania, usuniecia, ograniczenia przetwarzania oraz
+          cofniecia zgody. W sprawach dotyczacych danych osobowych skontaktuj sie z nami mailowo.
+        </p>
+      </div>
     </section>
   )
 }

@@ -1,5 +1,6 @@
 {
-  "name": "fencing-site",
+  "name": "pracownia-widawa",
+  "homepage": "https://github.com/maciejwieczorek0/pracownia/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.1"
