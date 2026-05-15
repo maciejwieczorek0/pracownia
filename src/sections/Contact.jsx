@@ -63,7 +63,17 @@ export default function Contact() {
         <h2>Umow darmowy pomiar i wycene</h2>
         <p>Odpowiadamy do 24h i pomagamy dobrac najlepsze rozwiazanie do Twojej posesji.</p>
 
-        <form onSubmit={handleSubmit}>
+        <form
+          action={`https://formsubmit.co/${leadEmail}`}
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nowa prosba o wycene - formularz strony"
+          />
           <input name="name" placeholder="Imie" required />
           <input name="phone" placeholder="Telefon" required />
           <input name="email" type="email" placeholder="Email" required />
